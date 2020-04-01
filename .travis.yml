@@ -83,7 +83,7 @@ jobs:
 
 after_failure:
   - df -h
-  - $HOME/build/bcbio/bcbio-nextgen/tests/data/test_bcbio_cwl-master/rnaseq/cromwell_work/cromwell-executions/main-rnaseq.cwl/*/call-prepare_sample/shard-0/execution/stderr.background
+  - cat $HOME/build/bcbio/bcbio-nextgen/tests/data/test_bcbio_cwl-master/rnaseq/cromwell_work/cromwell-executions/main-rnaseq.cwl/*/call-prepare_sample/shard-0/execution/stderr.background
 
 notifications:
   email: false
